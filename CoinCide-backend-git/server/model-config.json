@@ -13,6 +13,25 @@
       "./mixins"
     ]
   },
+  "AccessToken": {
+    "dataSource": "coinCide",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "coinCide",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "coinCide",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "coinCide",
+    "public": false
+  },
   "Utente": {
     "dataSource": "coinCide",
     "public": true
