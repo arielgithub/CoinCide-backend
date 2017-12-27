@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "coinCide": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "coinCide",
+    "password": "",
+    "name": "coinCide",
+    "connector": "mysql",
+    "user": "root"
   }
 }
