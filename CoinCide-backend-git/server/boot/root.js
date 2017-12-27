@@ -10,7 +10,7 @@ module.exports = function (server) {
 
   var ds = server.dataSources.coinCide;
   var lbTables = ['Utente', 'AccessToken', 'ACL', 'RoleMapping', 'Role'];
-  ds.automigrate(lbTables, function (er) {
+  ds.autoupdate(lbTables, function (er) {
     if (er) throw er;
     console.log('Loopback tables [' - lbTables - '] created in ', ds.adapter.name);
   });
