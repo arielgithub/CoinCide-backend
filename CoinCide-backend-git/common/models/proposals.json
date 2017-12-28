@@ -1,0 +1,27 @@
+{
+  "name": "proposals",
+  "plural": "proposals",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_offer": {
+      "type": "number",
+      "required": true
+    },
+    "id_currency": {
+      "type": "number",
+      "required": true
+    },
+    "quantity": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

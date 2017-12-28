@@ -1,0 +1,42 @@
+{
+  "name": "offers",
+  "plural": "offers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "id_user": {
+      "type": "number",
+      "required": true
+    },
+    "id_state_offer": {
+      "type": "number",
+      "required": true
+    },
+    "id_ad": {
+      "type": "number",
+      "required": true
+    },
+    "expiration_date": {
+      "type": "number",
+      "required": true
+    },
+    "insertion_date": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

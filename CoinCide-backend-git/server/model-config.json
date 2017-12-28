@@ -32,7 +32,23 @@
     "dataSource": "coinCide",
     "public": false
   },
-  "Utente": {
+  "ads": {
+    "dataSource": "coinCide",
+    "public": true
+  },
+  "currencies": {
+    "dataSource": "coinCide",
+    "public": false
+  },
+  "proposals": {
+    "dataSource": "coinCide",
+    "public": true
+  },
+  "offers": {
+    "dataSource": "coinCide",
+    "public": true
+  },
+  "users": {
     "dataSource": "coinCide",
     "public": true
   }

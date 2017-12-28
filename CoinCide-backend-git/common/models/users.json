@@ -1,22 +1,30 @@
 {
-  "name": "Utente",
+  "name": "users",
+  "plural": "users",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "username": {
       "type": "string",
       "required": true
     },
-    "cognome": {
+    "password": {
       "type": "string",
       "required": true
     },
     "email": {
       "type": "string",
       "required": true
+    },
+    "avatar": {
+      "type": "base64"
     }
   },
   "validations": [],

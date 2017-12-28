@@ -1,0 +1,41 @@
+{
+  "name": "currencies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "base64"
+    },
+    "rate_btc": {
+      "type": "number",
+      "required": true
+    },
+    "rate_eur": {
+      "type": "number",
+      "required": true
+    },
+    "rate_usd": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
