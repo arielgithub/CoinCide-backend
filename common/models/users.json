@@ -28,7 +28,20 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "ads": {
+      "type": "hasMany",
+      "model": "ads",
+      "foreignKey": "id_user",
+      "primaryKey": "id"
+    },
+    "offers": {
+      "type": "hasMany",
+      "model": "offers",
+      "foreignKey": "id_offer",
+      "primaryKey": "id"
+    }
+  },
   "acls": [],
   "methods": {}
 }

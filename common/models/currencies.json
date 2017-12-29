@@ -35,7 +35,20 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "proposals": {
+      "type": "hasMany",
+      "model": "proposals",
+      "foreignKey": "id_currency",
+      "primaryKey": "id"
+    },
+    "ads": {
+      "type": "hasMany",
+      "model": "ads",
+      "foreignKey": "id_currency",
+      "primaryKey": "id"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -48,7 +48,26 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "currencies": {
+      "type": "belongsTo",
+      "model": "currencies",
+      "foreignKey": "id_currency",
+      "primaryKey": "id"
+    },
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "id_user",
+      "primaryKey": "id"
+    },
+    "offers": {
+      "type": "hasMany",
+      "model": "offers",
+      "foreignKey": "id_ad",
+      "primaryKey": "id"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -36,7 +36,26 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "id_user",
+      "primaryKey": "id"
+    },
+    "ads": {
+      "type": "belongsTo",
+      "model": "ads",
+      "foreignKey": "id_ad",
+      "primaryKey": "id"
+    },
+    "proposals": {
+      "type": "hasMany",
+      "model": "proposals",
+      "foreignKey": "id_offer",
+      "primaryKey": "id"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -21,7 +21,20 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "currencies": {
+      "type": "belongsTo",
+      "model": "currencies",
+      "foreignKey": "id_currency",
+      "primaryKey": "id"
+    },
+    "offers": {
+      "type": "belongsTo",
+      "model": "offers",
+      "foreignKey": "id_offer",
+      "primaryKey": "id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
