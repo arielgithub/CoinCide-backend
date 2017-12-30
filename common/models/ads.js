@@ -6,7 +6,7 @@ module.exports = function (Ads) {
     Ads.getAdsPag = function (pagina, numElementPerPage, cb) {
         var ds = Ads.dataSource;
         var offset = (pagina - 1) * numElementPerPage;
-        var sql = "SELECT * FROM ads LIMIT " + numElementPerPage + " OFFSET " + offset;
+        var sql = "SELECT * FROM ads ORDER BY id LIMIT " + numElementPerPage + " OFFSET " + offset;
         var params = [pagina, numElementPerPage];
 
         ds.connector.query(sql, params, function (err, ads) {
