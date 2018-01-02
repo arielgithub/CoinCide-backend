@@ -36,7 +36,7 @@ module.exports = function (Ads) {
 
             if (err) console.error(err);
 
-            cb(err, ads[0]);
+            cb(err, ads ? ads[0] : ads);
 
         });
     }
